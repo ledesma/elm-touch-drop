@@ -45,13 +45,30 @@ onGestureStart =
 
 {-| TouchStart event -}
 onTouchStart : Signal.Address a -> a -> Attribute
-onTouchStart =
-  messageOnWithOptions "touchstart" { defaultOptions | preventDefault = True }
+onTouchStart addr msg =
+--  messageOnWithOptions "touchstart" { defaultOptions | preventDefault = True }
+  onWithOptions "touchstart" 
+                  { defaultOptions | preventDefault = True } 
+                  value
+                  (\evt -> 
+                    Native.TouchDrop.createDragShadow evt
+                    |> always msg
+                    |> Signal.message addr
+                  )
+
 
 {-| TouchMove event -}
 onTouchMove : Signal.Address a -> a -> Attribute
-onTouchMove =
-  messageOnWithOptions "touchmove" { defaultOptions | preventDefault = True }
+onTouchMove addr msg =
+--  messageOnWithOptions "touchmove" { defaultOptions | preventDefault = True }
+  onWithOptions "touchmove" 
+                  { defaultOptions | preventDefault = True } 
+                  value
+                  (\evt -> 
+                    Native.TouchDrop.moveDragShadow evt
+                    |> always msg
+                    |> Signal.message addr
+                  )
 
 
 {-| TouchEnd event -}
@@ -84,7 +101,8 @@ onTouchDrop addr handler =
                   { defaultOptions | preventDefault = True } 
                   value
                   (\evt -> 
-                    evt
+                    evt 
+                    |> Native.TouchDrop.clearDragShadow
                     |> Native.TouchDrop.dropTarget
                     |> handler 
                     |> Signal.message addr 

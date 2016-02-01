@@ -10,6 +10,8 @@ Elm.Native.TouchDrop.make = function(localRuntime) {
 
   var Maybe = Elm.Maybe.make(localRuntime);
 
+
+
 	function Tuple2(x, y)
 	{
 		return {
@@ -59,11 +61,52 @@ Elm.Native.TouchDrop.make = function(localRuntime) {
 	 	}
   }
 
+  function createDragShadow(evt) {
+  	var dragShadow = document.getElementById("dragShadow");
+  	if(dragShadow == null) {
+  		var original = evt.target
+  		dragShadow = original.cloneNode(true)
+  		dragShadow.id = "dragShadow";
+  		dragShadow.setAttribute("style", dragShadow.getAttribute("style")
+  			+ "; opacity: 0.5; position: absolute; pointer-events: none");
+  		document.body.appendChild(dragShadow);
+  		moveDragShadow(evt);
+  	}
+  	return evt;
+  }
+
+  function moveDragShadow(evt) {
+  	var dragShadow = document.getElementById("dragShadow");
+		if(dragShadow != null) {
+			var xy = getXY(evt);
+			dragShadow.style.left = (xy._0-60) +"px";
+			dragShadow.style.top = (xy._1-60) +"px";
+		}
+		return evt;
+  }
+
+  function clearDragShadow(evt) {
+		var dragShadow = document.getElementById("dragShadow");
+		if(dragShadow != null) {
+			dragShadow.parentNode.removeChild(dragShadow);
+		}
+		return evt;
+  }
+
+
   function log(x) {
   	console.log(x);
   	return x;
   }
 
-  return localRuntime.Native.TouchDrop.values = { dropTarget : dropTarget, getXY : getXY, logIt : log };
+
+  return localRuntime.Native.TouchDrop.values = { 
+  	dropTarget : dropTarget, 
+  	getXY : getXY, 
+  	logIt : log,
+  	createDragShadow : createDragShadow,
+  	moveDragShadow : moveDragShadow,
+  	clearDragShadow : clearDragShadow
+  };
 
 };
