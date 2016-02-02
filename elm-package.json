@@ -16,6 +16,5 @@
         "evancz/start-app": "2.0.2 <= v < 3.0.0"
     },
     "elm-version": "0.16.0 <= v < 0.17.0", 
-    "native-modules": true,
-    "elm-version": "0.16.0 <= v < 0.17.0"
+    "native-modules": true
 }

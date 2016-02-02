@@ -2,8 +2,6 @@ module DragDrop where
 
 import Html exposing (Html, Attribute, text, div, input)
 import Html.Attributes exposing (..)
-import Html.Events exposing (..)
-import String
 import Debug
 import StartApp
 import List
@@ -66,7 +64,7 @@ page address identifier =
                                 Just page -> TouchDrop page
                                 Nothing -> None
                           )
-    
+    , dropTarget identifier
     , id identifier
     , dropzone "move"
   ][text identifier]
@@ -86,7 +84,7 @@ dragStyle =
 
 
 
-
+app : StartApp.App Model
 app =
   StartApp.start  { init = (model, Effects.none)
                   , view = view
@@ -94,6 +92,7 @@ app =
                   , inputs = [] 
                   }
 
+main : Signal Html
 main = app.html 
 
 

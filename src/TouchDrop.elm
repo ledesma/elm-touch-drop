@@ -1,6 +1,6 @@
 module TouchDrop  (onDragStart, onDragOver, onDrop
                   , onTouchStart, onTouchMove, onTouchEnd
-                  , onGestureStart, onTouchDrop
+                  , onGestureStart, onTouchDrop, dropTarget
                   ) where
 
 {-| This exposes events for drag and drop on touch devices like iOS and Android.
@@ -9,25 +9,23 @@ module TouchDrop  (onDragStart, onDragOver, onDrop
 @docs onDragStart, onDragOver, onDrop
 
 # Touches
-@docs onTouchStart, onTouchMove, onTouchEnd, onTouchDrop
+@docs onTouchStart, onTouchMove, onTouchEnd, onTouchDrop, dropTarget
 
 # Gestures
 @docs onGestureStart
 
 -}
 
-
---import Native.TouchDrop
-import Json.Decode as Json exposing (..)
+import Json.Decode as Decode exposing (..)
 import Html.Events exposing (..)
 import Html exposing (Attribute)
+import Html.Attributes exposing (attribute)
 import Native.TouchDrop
-import Debug 
 
 
 messageOnWithOptions : String -> Options -> Signal.Address a -> a -> Attribute
 messageOnWithOptions name options addr msg =
-  onWithOptions name options Json.value (\_ -> Signal.message addr msg)
+  onWithOptions name options Decode.value (\_ -> Signal.message addr msg)
 
 
 point : Decoder (Float,Float)
@@ -109,6 +107,13 @@ onTouchDrop addr handler =
                   )
 
 
+
+{-| The returning value after the touc drop happened.
+    TouchDrop will only return an attribute if this is set on the targetted object.
+  -}
+dropTarget : String -> Attribute
+dropTarget value = 
+  attribute "droptarget" value
 
 
 
