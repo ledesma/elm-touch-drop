@@ -81,7 +81,7 @@ onTouchEnd =
 {-| DragStart event -}
 onDragStart : Signal.Address a -> a -> Attribute
 onDragStart =
-  messageOnWithOptions "dragstart" { defaultOptions | preventDefault = True }
+  messageOnWithOptions "dragstart" defaultOptions
 
 {-| DragOver event -}
 onDragOver : Signal.Address a -> a -> Attribute

@@ -60,7 +60,7 @@ page address identifier =
     --, onDragEnd address DragEnd
     , onTouchStart address (TouchStart identifier)
     , onTouchMove address (TouchMove identifier)
-    , onTouchEnd address (TouchEnd identifier)
+    --, onTouchEnd address (TouchEnd identifier)
     , onTouchDrop address (\target -> 
                               case target of 
                                 Just page -> TouchDrop page
