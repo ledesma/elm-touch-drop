@@ -10,10 +10,10 @@ import Task exposing (Task)
 import Maybe exposing (..)
 import Dict
 import TouchDrop exposing (..)
---import Touch
 import Signal 
+import Array
 
--- VIEW
+
 
 type alias Page = 
   { id: String
@@ -29,11 +29,10 @@ type alias Model =
 model : Model
 model = 
   { pages =
-      [
-        {id = "Page 1"}
-      , {id = "Page 2"}
-      , {id = "Page 3"}
-      ]
+      (List.map 
+        (\i -> {id = ("Page "++(toString i))}) 
+        (Array.toList (Array.initialize 200 identity )) -- 0..99
+      )
   , dragging = Nothing
   , action = None 
   }

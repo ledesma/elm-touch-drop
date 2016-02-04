@@ -1,6 +1,6 @@
 module TouchDrop  (onDragStart, onDragOver, onDrop
                   , onTouchStart, onTouchMove, onTouchEnd
-                  , onGestureStart, onTouchDrop, dropTarget
+                  , onTouchDrop, dropTarget
                   ) where
 
 {-| This exposes events for drag and drop on touch devices like iOS and Android.
@@ -11,12 +11,9 @@ module TouchDrop  (onDragStart, onDragOver, onDrop
 # Touches
 @docs onTouchStart, onTouchMove, onTouchEnd, onTouchDrop, dropTarget
 
-# Gestures
-@docs onGestureStart
-
 -}
 
-import Json.Decode as Decode exposing (..)
+import Json.Decode as Json exposing (..)
 import Html.Events exposing (..)
 import Html exposing (Attribute)
 import Html.Attributes exposing (attribute)
@@ -25,7 +22,32 @@ import Native.TouchDrop
 
 messageOnWithOptions : String -> Options -> Signal.Address a -> a -> Attribute
 messageOnWithOptions name options addr msg =
-  onWithOptions name options Decode.value (\_ -> Signal.message addr msg)
+  onWithOptions name options Json.value (\_ -> Signal.message addr msg)
+
+
+onTouchWithOptions : String -> TouchOptions -> Json.Decoder a -> (a -> Signal.Message) -> Attribute
+onTouchWithOptions name options addr toMessage =
+  Native.TouchDrop.onTouch name options Json.value toMessage
+
+
+type alias TouchOptions = 
+  { stopPropagation : Bool
+  , preventDefault : Bool
+  , fingers : Int
+  }
+
+{-| Everything is `False` by default.
+    defaultOptions =
+        { stopPropagation = False
+        , preventDefault = False
+        }
+-}
+defaultTouchOptions : TouchOptions
+defaultTouchOptions =
+    { stopPropagation = False
+    , preventDefault = False
+    , fingers = -1
+    }
 
 
 point : Decoder (Float,Float)
@@ -36,17 +58,11 @@ point =
 
 
 
-{-| GestureStart event -}
-onGestureStart : Signal.Address a -> a -> Attribute
-onGestureStart =
-  messageOnWithOptions "gesturestart" { defaultOptions | preventDefault = True }
-
 {-| TouchStart event -}
 onTouchStart : Signal.Address a -> a -> Attribute
 onTouchStart addr msg =
---  messageOnWithOptions "touchstart" { defaultOptions | preventDefault = True }
-  onWithOptions "touchstart" 
-                  { defaultOptions | preventDefault = True } 
+  onTouchWithOptions "touchstart" 
+                  { defaultTouchOptions | preventDefault = True , fingers = 1 } 
                   value
                   (\evt -> 
                     Native.TouchDrop.createDragShadow evt
@@ -58,9 +74,8 @@ onTouchStart addr msg =
 {-| TouchMove event -}
 onTouchMove : Signal.Address a -> a -> Attribute
 onTouchMove addr msg =
---  messageOnWithOptions "touchmove" { defaultOptions | preventDefault = True }
-  onWithOptions "touchmove" 
-                  { defaultOptions | preventDefault = True } 
+  onTouchWithOptions "touchmove" 
+                  { defaultTouchOptions | preventDefault = True , fingers = 1 } 
                   value
                   (\evt -> 
                     Native.TouchDrop.moveDragShadow evt
@@ -71,8 +86,15 @@ onTouchMove addr msg =
 
 {-| TouchEnd event -}
 onTouchEnd : Signal.Address a -> a -> Attribute
-onTouchEnd =
-  messageOnWithOptions "touchend" { defaultOptions | preventDefault = True } 
+onTouchEnd addr msg =
+  onTouchWithOptions "touchend" 
+                  { defaultTouchOptions | preventDefault = True , fingers = 1 } 
+                  value 
+                  (\evt -> 
+                    Native.TouchDrop.clearDragShadow evt 
+                    |> always msg
+                    |> Signal.message addr
+                  )
 
 
 
@@ -95,8 +117,8 @@ onDrop =
 {-| Drop event. Note: you need to use onDragOver too, otherwise the droop event won't get fired -}
 onTouchDrop : Signal.Address a -> (Maybe String -> a) -> Attribute
 onTouchDrop addr handler =
-  onWithOptions "touchend" 
-                  { defaultOptions | preventDefault = True } 
+  onTouchWithOptions "touchend" 
+                  { defaultTouchOptions | preventDefault = True , fingers = 0 } 
                   value
                   (\evt -> 
                     evt 

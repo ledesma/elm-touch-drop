@@ -9,7 +9,8 @@ Elm.Native.TouchDrop.make = function(localRuntime) {
   }
 
   var Maybe = Elm.Maybe.make(localRuntime);
-
+  var Json = Elm.Native.Json.make(localRuntime);
+  var Signal = Elm.Native.Signal.make(localRuntime);
 
 
   function Tuple2(x, y)
@@ -47,6 +48,38 @@ Elm.Native.TouchDrop.make = function(localRuntime) {
       posy = posy - Math.round(rely) - localRuntime.node.clientTop;
     }
     return Tuple2(posx, posy);
+  }
+
+
+  function onTouch(name, options, decoder, createMessage)
+  {
+    function eventHandler(event)
+    {
+      if(event.touches != undefined && (options.fingers == -1 || options.fingers == event.touches.length)) {
+        var value = A2(Json.runDecoderValue, decoder, event);
+        if (value.ctor === 'Ok')
+        {
+          if (options.stopPropagation)
+          {
+            event.stopPropagation();
+          }
+          if (options.preventDefault)
+          {
+            event.preventDefault();
+          }
+          Signal.sendMessage(createMessage(value._0));
+        }
+      }
+    }
+    return property('on' + name, eventHandler);
+  }
+
+  function property(key, value)
+  {
+    return {
+      key: key,
+      value: value
+    };
   }
 
 
@@ -119,7 +152,8 @@ Elm.Native.TouchDrop.make = function(localRuntime) {
     logIt : log,
     createDragShadow : createDragShadow,
     moveDragShadow : moveDragShadow,
-    clearDragShadow : clearDragShadow
+    clearDragShadow : clearDragShadow,
+    onTouch : F4(onTouch)
   };
 
 };

@@ -1,0 +1,748 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fr",
+				"from_tupel"
+			],
+			[
+				"j",
+				"JSAction"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"order",
+				"orderPages"
+			],
+			[
+				"to",
+				"toString	a -> String"
+			],
+			[
+				"ad",
+				"activeDocument"
+			],
+			[
+				"active",
+				"activeDoc"
+			],
+			[
+				"ac",
+				"activeDocument"
+			],
+			[
+				"docu",
+				"documents"
+			],
+			[
+				"e",
+				"Effects"
+			],
+			[
+				"update",
+				"updatedPageList"
+			],
+			[
+				"from",
+				"fromBackend"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"Page",
+				"PageWithDocumentId"
+			],
+			[
+				"docume",
+				"document_id"
+			],
+			[
+				"Docuem",
+				"Document"
+			],
+			[
+				"Effec",
+				"Effects"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"Invoi",
+				"InvoiceItem"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"defm",
+				"defm	defmacro"
+			],
+			[
+				"instance",
+				"instanceConfig"
+			],
+			[
+				"marantz",
+				"marantz_socket"
+			],
+			[
+				"varia",
+				"variable"
+			],
+			[
+				"ruby",
+				"ruby-ev3"
+			],
+			[
+				"fade",
+				"fadeOut"
+			],
+			[
+				"support",
+				"supportCanvas"
+			],
+			[
+				"pr",
+				"principal_request"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"RF12_HDR",
+				"RF12_HDR_MASK"
+			],
+			[
+				"p",
+				"println"
+			],
+			[
+				"exe",
+				"exec_send_ir"
+			],
+			[
+				"exec_",
+				"exec_ir_received"
+			],
+			[
+				"exec",
+				"exec_request_color"
+			],
+			[
+				"exec_set",
+				"exec_set_color"
+			],
+			[
+				"da",
+				"rf12_data"
+			],
+			[
+				"CTRL_SE",
+				"CTRL_SEND_IR"
+			],
+			[
+				"CTRL_",
+				"CTRL_IR_RECEIVED"
+			],
+			[
+				"CTRL_RE",
+				"CTRL_REQUEST_COLOR"
+			],
+			[
+				"CTRL_SET_",
+				"CTRL_SET_COLOR"
+			],
+			[
+				"CTRl",
+				"CTRL_SET_POWER"
+			],
+			[
+				"ctrl_e",
+				"CTRL_SET_POWER"
+			],
+			[
+				"CTRL_R",
+				"CTRL_REQUEST_BRIGHTNESS"
+			],
+			[
+				"C",
+				"CTRL_MOTION_DETECTED"
+			],
+			[
+				"CTR",
+				"CTRL_IR_RECEIVED"
+			],
+			[
+				"CTRL_S",
+				"CTRL_SEND_IR"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Elm Language Support/Build Systems/Elm Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Elm Language Support/Build Systems/Elm Make.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Elm Language Support/Build Systems/Elm Make.sublime-build",
+					"Ignore Warnings"
+				],
+				[
+					"Packages/Elm Language Support/Build Systems/Elm Make.sublime-build",
+					"Run - Ignore Warnings"
+				]
+			],
+			[
+				"Packages/Elm Language Support/Build Systems/Elm Make.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"last_filter": "pack list",
+		"selected_items":
+		[
+			[
+				"pack list",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"phpfmt: format now"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 548.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ledesma/development/elm/elm-touch-drop"
+	],
+	"file_history":
+	[
+		"/Users/ledesma/development/elm/elm-html/examples/DragDrop.elm",
+		"/Users/ledesma/development/elm/elm-html/elm-html.sublime-project",
+		"/Users/ledesma/development/elm/elm-html/examples/Sort.elm",
+		"/Users/ledesma/development/elm/elm-html.sublime-project",
+		"/Users/ledesma/development/elm/elm-html/elm-package.json",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/static/css/app.css",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/static/js/app.js",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/CorrectionActions.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/CorrectionModel.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/CorrectionView.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/static/js/socket.js",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/Correction.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/Native/Sorting.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/Sorting.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/models/field.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/Correction2.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/brunch-config.js",
+		"/Users/ledesma/development/elixir/hello_phoenix/priv/repo/migrations/20160118203613_create_document.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/priv/repo/migrations/20160118195237_create_document.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/priv/repo/migrations/20160118195416_create_field.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/test/models/document_test.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/priv/repo/migrations/20160118195240_create_page.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/channels/document_channel.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/priv/repo/seeds.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/channels/user_socket.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/models/page.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/models/document.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/test/models/page_test.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/test/channels/page_channel_test.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/channels/page_channel.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/test/channels/document_channel_test.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/index2.html",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/templates/layout/app.html.eex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/index.html",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/elm.js",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/templates/page/index.html.eex",
+		"/Users/ledesma/development/elixir/hello_phoenix/test/controllers/page_controller_test.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/.gitignore",
+		"/Applications/Emulators/PSX Games/Final Fantasy VII/FF7-neu-1.m3u",
+		"/Volumes/symcon/modules/SymconSonos/Sonos/module.php",
+		"/Volumes/Symcon/scripts/deleted/57625.ips.php",
+		"/Volumes/OS X Base Raid/Library/Logs/Symcon/logfile1449241197.log",
+		"/Volumes/OS X Base Raid/Library/Logs/Symcon/logfile1449239769.log",
+		"/Volumes/OS X Base Raid/Library/Logs/Symcon/logfile1449238153.log",
+		"/Volumes/Symcon/scripts/54888.ips.php",
+		"/Volumes/Symcon/scripts/IPSLibrary/app/modules/IPSSonos/IPSSonos_Room.class.php",
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/phpfmt/message",
+		"/Volumes/Symcon/scripts/IPSLibrary/app/modules/IPSSonos/IPSSonos_Query.inc.php",
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/User/phpfmt.sublime-settings",
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/phpfmt/phpfmt.sublime-settings",
+		"/Volumes/Symcon/scripts/57625.ips.php",
+		"/Volumes/Symcon/scripts/IPSLibrary/app/modules/IPSSonos/IPSSonos_Constants.inc.php",
+		"/Volumes/Symcon/scripts/IPSLibrary/app/modules/IPSSonos/IPSSonos_ChangeSettings.ips.php",
+		"/Volumes/Symcon/scripts/IPSLibrary/app/modules/IPSSonos/IPSSonos_Server.class.php",
+		"/Volumes/Symcon/scripts/IPSLibrary/app/modules/IPSSonos/IPSSonos.inc.php",
+		"/Volumes/Symcon/php.ini",
+		"/Volumes/Symcon/scripts/IPSLibrary/config/core/IPSLogger/IPSLogger_Configuration.inc.php",
+		"/Volumes/Symcon/scripts/__autoload.php",
+		"/Volumes/Symcon/scripts/20231.ips.php",
+		"/Volumes/Symcon/scripts/IPSLibrary/app/core/IPSLogger/IPSLogger_Output.inc.php",
+		"/Applications/CrashPlan_liselle.app/Contents/Resources/Java/conf/ui.properties",
+		"/Users/ledesma/Documents/Certificate/star.ledesma.ch.key",
+		"/Users/ledesma/Documents/Certificate/star.ledesma.ch.csr",
+		"/Volumes/Symcon/scripts/37532.ips.php",
+		"/Volumes/Symcon/scripts/34396.ips.php",
+		"/Volumes/Symcon/scripts/32213.ips.php",
+		"/Users/ledesma/Library/Application Support/Mad Head Games/Nevertales - Legends - CE/PLAYER.profile",
+		"/Users/ledesma/Library/Application Support/Mad Head Games/Nevertales - Legends - CE/options.cfg",
+		"/Applications/Games/Nevertales - Legends CE v2.0 [Intel] NoDRM/Nevertales - Legends CE.app/Contents/Resources/data/game.cfg",
+		"/Users/ledesma/Library/Application Support/Mad Head Games/Nevertales - Legends - CE/profiles.sav",
+		"/Applications/Games/Nevertales - Legends CE v2.0 [Intel] NoDRM/Nevertales - Legends CE.app/Contents/Resources/data/atlases.cfg",
+		"/Applications/Games/Nevertales - Legends CE v2.0 [Intel] NoDRM/Nevertales - Legends CE.app/Contents/Resources/data/scenes.cfg",
+		"/Applications/DbVisualizer.app/Contents/Resources/app/dbvisgui.sh",
+		"/Users/ledesma/development/homebridge/app.js",
+		"/Users/ledesma/development/ev3-hackathon/lib/motor.ex",
+		"/Users/ledesma/development/homebridge/config.json",
+		"/Users/ledesma/development/homebridge/config-sample.json",
+		"/Users/ledesma/development/homebridge/accessories/Sonos.js",
+		"/Users/ledesma/development/homebridge/platforms/Symcon.js",
+		"/Users/ledesma/development/homebridge/node_modules/node-persist/node-persist.js",
+		"/Users/ledesma/development/ev3-hackathon/lib/sensors.ex",
+		"/Users/ledesma/development/ev3-hackathon/lib/color_sensor.ex",
+		"/Users/ledesma/development/ev3-hackathon/lib/infrared_sensor.ex",
+		"/Users/ledesma/development/ev3-hackathon/lib/motor_dsl.ex",
+		"/Users/ledesma/development/ev3-hackathon/lib/line_follower/bumper_events.ex",
+		"/Applications/CrashPlan.app/Contents/Resources/Java/conf/ui.properties",
+		"/Volumes/Symcon/scripts/IPSLibrary/config/modules/IPSSonos/IPSSonos_Custom.inc.php",
+		"/Volumes/Symcon/scripts/IPSLibrary/app/core/IPSUtils/IPSUtils.inc.php",
+		"/Users/ledesma/Library/Application Support/unity.InoCoPlus.Gunspell_BigFishEdition/SaveData.xml",
+		"/Users/ledesma/development/homebridge/package.json",
+		"/Volumes/Symcon/webfront/user/IPSCam/IPSCam_CameraUtils.php",
+		"/Volumes/Symcon/webfront/user/meteo/index.php",
+		"/Volumes/Symcon/scripts/IPSLibrary/config/modules/IPSSonos/IPSSonos_Configuration.inc.php",
+		"/Volumes/Symcon/scripts/26666.ips.php",
+		"/Volumes/Symcon/scripts/MARANTZ.ActionScript.ips.php",
+		"/Volumes/Symcon/scripts/MARANTZ.Functions.ips.php",
+		"/Volumes/Symcon/scripts/MARANTZ.CommandManager.ips.php",
+		"/Volumes/Symcon/scripts/Netatmo-API-PHP/NAApiClient.php",
+		"/Volumes/Symcon/scripts/Netatmo-API-PHP/Config.php",
+		"/Volumes/Symcon/webfront/user/skins/index.php",
+		"/Users/ledesma/Downloads/IPSModuleManagerGUI-4.php",
+		"/Users/ledesma/Downloads/IPSModuleManagerGUI.php",
+		"/Applications/CrashPlan.app/Contents/Info.plist",
+		"/Applications/CrashPlan.app/Contents/Resources/Java/conf/default.service.xml",
+		"/Users/ledesma/development/ips-modules/SymconMisc/Geofency/module.php",
+		"/Users/ledesma/development/elixir/quicky_sinth/test/quicky_synth/keyboard_map_test.exs",
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/ledesma/Downloads/PHPSonos.inc/br_sonos_test.php",
+		"/Users/ledesma/Downloads/PHPSonos.inc/br_sonos_cutter_action.php",
+		"/Volumes/Symcon/webfront/user/tv.html",
+		"/Volumes/Symcon/rpc/tv.html",
+		"/Users/ledesma/Docker/irtrans/remotes/samsungtv.rem",
+		"/Library/WebServer/Documents/slide/slide.php",
+		"/Library/WebServer/Documents/slide/ninja-slider.js",
+		"/Volumes/OS X Base Raid/Library/Application Support/Symcon/scripts/IPSLibrary/install/InitializationFiles/IPSCam.ini",
+		"/Users/ledesma/Downloads/ninja-slider/1/ninja-slider.js",
+		"/Users/ledesma/Desktop/slide/slide.php",
+		"/Users/ledesma/Downloads/ninja-slider/demo1.html",
+		"/Users/ledesma/Downloads/ninja-slider/demo2.html",
+		"/Users/ledesma/Documents/wowslider.html",
+		"/Users/ledesma/Documents/wowslider-howto.html",
+		"/Users/ledesma/Documents/wowslider-iframe.html",
+		"/Users/ledesma/Docker/irtrans/Dockerfile",
+		"/Volumes/ledesma/Desktop/IP-Symcon/backup/settings1430611200.json",
+		"/Volumes/Symcon/scripts/IPSLibrary/app/core/IPSLogger/IPSLogger.inc.php",
+		"/Volumes/Symcon/scripts/IPSLibrary/app/core/IPSLogger/IPSLogger_PurgeLogFiles.ips.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/ledesma/development/elixir/hello_phoenix",
+			"/Volumes/Symcon/scripts",
+			"/Volumes/Symcon",
+			"/Volumes/Symcon/scripts",
+			"/Volumes/Symcon",
+			"/Volumes/Symcon/scripts/IPSLibrary/app/modules/IPSSonos",
+			"/Volumes/Symcon/scripts",
+			"/Users/ledesma/development/ev3-hackathon/lib",
+			"/Users/ledesma/development/homebridge",
+			"/Volumes/Symcon/scripts/IPSLibrary/app/core/IPSLogger",
+			"/Volumes/Symcon/scripts/IPSLibrary",
+			"/Applications/Symcon.app/Contents/Service",
+			"/Library/Application Support/Symcon",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"value",
+			"messa",
+			"defaultO",
+			"fst",
+			"dragover",
+			"onWith",
+			" \n",
+			"active",
+			"env",
+			"Sirting",
+			"TaskTutorial",
+			"model",
+			"jsMessage",
+			"model",
+			"toModel",
+			"updatedP",
+			"ids",
+			"model",
+			"initial",
+			"pages:",
+			"Page",
+			"order",
+			" \n",
+			"join",
+			"invoice",
+			"InvoiceItem",
+			"invoiceItem",
+			"InvoiceItem",
+			"Separator",
+			"fullscreen",
+			"embed",
+			"List Invoic",
+			"\n      ",
+			"sorting",
+			"setData",
+			"Sorta",
+			"tofo",
+			": ",
+			"/*!",
+			"background-color:#fff",
+			"background-color:",
+			"background:",
+			"background",
+			"body",
+			"inclu",
+			"requir",
+			"_ping",
+			"sys_",
+			"sys_ping",
+			"phpsonos",
+			"SYS_Ping",
+			"Ping",
+			"throw",
+			"return",
+			"Netatmo",
+			"IPSSONOS_FNC_SETQUERYTIME",
+			"QuerySetTime",
+			"IPSSONOS_EVT_QUERY",
+			"Event",
+			"Timer",
+			"FIXME",
+			"HM_",
+			"HM_WriteValueBoolean($_IPS['TARGET'], \"\"",
+			"11",
+			"get_function_name",
+			"getter",
+			"ev3-uart-29",
+			"msensor",
+			"removePersistedKey",
+			"sType",
+			"SetBrightness",
+			"JSON",
+			"search",
+			"SymconAccessory",
+			"instanceconfig",
+			"symconA",
+			"IPS_GetInstanceListByModuleID",
+			"031",
+			"Text_Volume_Offset",
+			"message",
+			"play_",
+			"play",
+			"PlayTTSByRoomSimple",
+			"IPSSONOS_FNC_MSGGEN",
+			"PlayMessage",
+			"tts_sim",
+			"tts",
+			"echo",
+			"devicelis",
+			"device",
+			"devicel",
+			"getUri",
+			"setvariablepr",
+			"get_date",
+			"mobileGUI",
+			"a",
+			"b",
+			"g",
+			"function a",
+			"a = fu",
+			"Hb",
+			"console",
+			"n",
+			"Hb",
+			"n.b",
+			"Hb",
+			"t",
+			"replace",
+			"license",
+			"bb",
+			"aa",
+			"qb",
+			"zb",
+			"zd",
+			"rb",
+			"zb",
+			"local",
+			"e(",
+			"Array",
+			"fileSystem",
+			"length",
+			"hash",
+			"strip",
+			"id",
+			"strip",
+			"zb",
+			"Rb",
+			"cc="
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Page",
+			"/",
+			"'KEY",
+			"'",
+			" {}",
+			".",
+			"jlf-"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/ledesma/development/elm/elm-touch-drop"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.elm_type":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.stino_log":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "Packages/Elm Language Support/Build Systems/Elm Make.sublime-build",
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"marantz",
+				"scripts/MARANTZ.ActionScript.ips.php"
+			],
+			[
+				"ipssonoscusto",
+				"scripts/IPSLibrary/config/modules/IPSSonos/IPSSonos_Custom.inc.php"
+			],
+			[
+				"maran",
+				"scripts/MARANTZ.Functions.ips.php"
+			],
+			[
+				"sonosconfig",
+				"scripts/IPSLibrary/config/modules/IPSSonos/IPSSonos_Configuration.inc.php"
+			],
+			[
+				"ipssonosroom",
+				"scripts/IPSLibrary/app/modules/IPSSonos/IPSSonos_Room.class.php"
+			],
+			[
+				"20231",
+				"scripts/20231.ips.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/development/elm/elm-html.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
