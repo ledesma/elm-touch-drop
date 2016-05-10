@@ -106,7 +106,6 @@ Elm.Native.TouchDrop.make = function(localRuntime) {
     return elementWithDropTarget(elem.parentElement)
   }
 
-
   function createDragShadow(evt) {
     var dragShadow = document.getElementById("dragShadow");
     if(dragShadow == null) {
@@ -115,6 +114,7 @@ Elm.Native.TouchDrop.make = function(localRuntime) {
       dragShadow.id = "dragShadow";
       dragShadow.setAttribute("style", dragShadow.getAttribute("style")
         + "; opacity: 0.5; position: absolute; pointer-events: none");
+      dragShadow.setAttribute("height", "150px");
       document.body.appendChild(dragShadow);
       moveDragShadow(evt);
     }
@@ -123,6 +123,7 @@ Elm.Native.TouchDrop.make = function(localRuntime) {
 
   function moveDragShadow(evt) {
     var dragShadow = document.getElementById("dragShadow");
+    console.log("dragshadow dimension ("+dragShadow.clientWidth+"/"+dragShadow.clientHeight+")")
     if(dragShadow != null) {
       var xy = getXY(evt);
       dragShadow.style.left = (xy._0-(dragShadow.clientWidth/2)) +"px";
