@@ -1,7 +1,7 @@
-module TouchDrop  (onDragStart, onDragOver, onDrop
+module TouchDrop exposing (onDragStart, onDragOver, onDrop
                   , onTouchStart, onTouchMove, onTouchEnd
                   , onGestureStart, onTouchDrop, dropTarget
-                  ) where
+                  ) 
 
 {-| This exposes events for drag and drop on touch devices like iOS and Android.
 
@@ -16,16 +16,16 @@ module TouchDrop  (onDragStart, onDragOver, onDrop
 
 -}
 
-import Json.Decode as Decode exposing (..)
+import Json.Decode as Decode
 import Html.Events exposing (..)
 import Html exposing (Attribute)
 import Html.Attributes exposing (attribute)
 import Native.TouchDrop
 
 
-messageOnWithOptions : String -> Options -> Signal.Address a -> a -> Attribute
-messageOnWithOptions name options addr msg =
-  onWithOptions name options Decode.value (\_ -> Signal.message addr msg)
+messageOnWithOptions : String -> Options -> msg -> Attribute msg
+messageOnWithOptions name options a = 
+  onWithOptions name options Decode.value
 
 
 point : Decoder (Float,Float)
@@ -37,27 +37,26 @@ point =
 
 
 {-| GestureStart event -}
-onGestureStart : Signal.Address a -> a -> Attribute
+onGestureStart : msg -> Attribute msg
 onGestureStart =
   messageOnWithOptions "gesturestart" { defaultOptions | preventDefault = True }
 
 {-| TouchStart event -}
-onTouchStart : Signal.Address a -> a -> Attribute
-onTouchStart addr msg =
+onTouchStart : msg -> Attribute msg
+onTouchStart msg =
 --  messageOnWithOptions "touchstart" { defaultOptions | preventDefault = True }
   onWithOptions "touchstart" 
                   { defaultOptions | preventDefault = True } 
-                  value
+                  Decode.value
                   (\evt -> 
                     Native.TouchDrop.createDragShadow evt
                     |> always msg
-                    |> Signal.message addr
                   )
 
 
 {-| TouchMove event -}
-onTouchMove : Signal.Address a -> a -> Attribute
-onTouchMove addr msg =
+onTouchMove : msg -> Attribute msg
+onTouchMove msg =
 --  messageOnWithOptions "touchmove" { defaultOptions | preventDefault = True }
   onWithOptions "touchmove" 
                   { defaultOptions | preventDefault = True } 
@@ -65,45 +64,43 @@ onTouchMove addr msg =
                   (\evt -> 
                     Native.TouchDrop.moveDragShadow evt
                     |> always msg
-                    |> Signal.message addr
                   )
 
 
 {-| TouchEnd event -}
-onTouchEnd : Signal.Address a -> a -> Attribute
+onTouchEnd : msg -> Attribute msg
 onTouchEnd =
   messageOnWithOptions "touchend" { defaultOptions | preventDefault = True } 
 
 
 
 {-| DragStart event -}
-onDragStart : Signal.Address a -> a -> Attribute
+onDragStart : msg -> Attribute msg
 onDragStart =
   messageOnWithOptions "dragstart" defaultOptions
 
 {-| DragOver event -}
-onDragOver : Signal.Address a -> a -> Attribute
+onDragOver : msg -> Attribute msg
 onDragOver =
   messageOnWithOptions "dragover" { defaultOptions | preventDefault = True }
 
 {-| Drop event. Note: you need to use onDragOver too, otherwise the droop event won't get fired -}
-onDrop : Signal.Address a -> a -> Attribute
+onDrop : msg -> Attribute msg
 onDrop =
   messageOnWithOptions "drop" { defaultOptions | preventDefault = True } 
 
 
 {-| Drop event. Note: you need to use onDragOver too, otherwise the droop event won't get fired -}
-onTouchDrop : Signal.Address a -> (Maybe String -> a) -> Attribute
-onTouchDrop addr handler =
+onTouchDrop : (Maybe String -> msg) -> Attribute msg
+onTouchDrop handler =
   onWithOptions "touchend" 
                   { defaultOptions | preventDefault = True } 
-                  value
+                  Json.succeed
                   (\evt -> 
                     evt 
                     |> Native.TouchDrop.clearDragShadow
                     |> Native.TouchDrop.dropTarget
                     |> handler 
-                    |> Signal.message addr 
                   )
 
 
@@ -111,7 +108,7 @@ onTouchDrop addr handler =
 {-| The returning value after the touc drop happened.
     TouchDrop will only return an attribute if this is set on the targetted object.
   -}
-dropTarget : String -> Attribute
+dropTarget : String -> Attribute msg
 dropTarget value = 
   attribute "droptarget" value
 

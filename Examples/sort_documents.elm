@@ -1,4 +1,4 @@
-module DragDrop where
+module DragDrop
 
 import Html exposing (Html, Attribute, text, div, input)
 import Html.Attributes exposing (..)
@@ -23,7 +23,7 @@ type alias Model =
   {
     pages:List Page
   , dragging: Maybe String
-  , action: Action
+  , msg: Msg
   }
 
 model : Model
@@ -35,16 +35,16 @@ model =
       , {id = "Page 3"}
       ]
   , dragging = Nothing
-  , action = None 
+  , msg = None 
   }
 
-view : Signal.Address Action -> Model -> Html
+view : Signal.Address Msg -> Model -> Html
 view address model =
   div []
-      ( div [ ] [ text (toString model.action) ] 
+      ( div [ ] [ text (toString model.msg) ] 
         :: (List.map (\p -> page address p.id) model.pages))
 
-page : Signal.Address Action -> String -> Html
+page : Signal.Address Msg -> String -> Html
 page address identifier =
   div[ 
       draggable "true"
@@ -98,7 +98,7 @@ main = app.html
 
 -- SIGNALS
 
-type Action = None | DragStart String | DragLeave | DragEnter | DragEnd | Drop String | DragOver
+type Msg = None | DragStart String | DragLeave | DragEnter | DragEnd | Drop String | DragOver
               | TouchStart String
               | TouchMove String
               | TouchEnd String
@@ -108,10 +108,10 @@ type Action = None | DragStart String | DragLeave | DragEnter | DragEnd | Drop S
 port tasks : Signal (Task Never ())
 port tasks = app.tasks
 
-update : Action -> Model -> (Model, Effects Action)   
-update action model = 
+update : Msg -> Model -> (Model, Effects Msg)   
+update msg model = 
   (
-  case (Debug.log "action" action) of
+  case (Debug.log "msg" msg) of
     DragStart pageId ->
       {model | dragging = Just pageId}
     Drop toPageId ->
@@ -131,17 +131,17 @@ update action model =
     _ ->  
       model
   )
-  |> updateAction action
+  |> updateMsg msg
   |> nofx
 
 
 
 
-updateAction : Action -> Model -> Model
-updateAction act model =
-  { model | action = act }
+updateMsg : Msg -> Model -> Model
+updateMsg act model =
+  { model | msg = act }
 
-nofx : Model -> (Model, Effects Action) 
+nofx : Model -> (Model, Effects Msg) 
 nofx model = 
   (model, Effects.none)
 

@@ -1,0 +1,894 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"elm",
+				"elm-lang"
+			],
+			[
+				"curret",
+				"currentMousePosition"
+			],
+			[
+				"initia",
+				"initialMousePosition"
+			],
+			[
+				"true",
+				"True"
+			],
+			[
+				"do",
+				"corrected_doc"
+			],
+			[
+				"se",
+				"get_session"
+			],
+			[
+				"with",
+				"width"
+			],
+			[
+				"w",
+				"withDefault"
+			],
+			[
+				"to",
+				"toFloat"
+			],
+			[
+				"zero",
+				"zeroX"
+			],
+			[
+				"new",
+				"newAlternative"
+			],
+			[
+				"mouseD",
+				"mouseIsDown"
+			],
+			[
+				"init",
+				"initialAlternative"
+			],
+			[
+				"bal",
+				"batchlistElem"
+			],
+			[
+				"bat",
+				"batchlistElem"
+			],
+			[
+				"in",
+				"init_data"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"styl",
+				"style	Tag"
+			],
+			[
+				"u",
+				"url"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"s",
+				"status"
+			],
+			[
+				"c",
+				"changeset"
+			],
+			[
+				"page",
+				"pagePosition"
+			],
+			[
+				"mo",
+				"mousePosition"
+			],
+			[
+				"Pa",
+				"pagePosition"
+			],
+			[
+				"mouse",
+				"mouseX"
+			],
+			[
+				"drag",
+				"dragShadow"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"ex",
+				"externalizePage"
+			],
+			[
+				"json",
+				"jsonToPage"
+			],
+			[
+				"inter",
+				"internalizeDocumentStatus"
+			],
+			[
+				"externalize",
+				"externalizePageStatus"
+			],
+			[
+				"Documen",
+				"DocumentStatus"
+			],
+			[
+				"Docu",
+				"DocumentStatus"
+			],
+			[
+				"Page",
+				"PageInUnknownState"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"paddig",
+				"padding-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"p",
+				"page"
+			],
+			[
+				"dec",
+				"decodePageJson"
+			],
+			[
+				"update",
+				"updateBackEndEffect"
+			],
+			[
+				"E",
+				"ExternalDocument"
+			],
+			[
+				"Doc",
+				"Document"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"pa",
+				"pagePos"
+			],
+			[
+				"doc",
+				"docId"
+			],
+			[
+				"document",
+				"document_id"
+			],
+			[
+				"pages",
+				"pagesIndex"
+			],
+			[
+				"d",
+				"document_id"
+			],
+			[
+				"b",
+				"bgcolor	Attr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "elm-package.json",
+			"settings":
+			{
+				"buffer_size": 478,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/TouchDrop.elm",
+			"settings":
+			{
+				"buffer_size": 3267,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Native/TouchDrop.js",
+			"settings":
+			{
+				"buffer_size": 3374,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Examples/sort_documents.elm",
+			"settings":
+			{
+				"buffer_size": 3859,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Elm Language Support/Build Systems/Elm Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Elm Language Support/Build Systems/Elm Make.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Elm Language Support/Build Systems/Elm Make.sublime-build",
+					"Ignore Warnings"
+				],
+				[
+					"Packages/Elm Language Support/Build Systems/Elm Make.sublime-build",
+					"Run - Ignore Warnings"
+				]
+			],
+			[
+				"Packages/Elm Language Support/Build Systems/Elm Make.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ledesma/development/elm/elm-touch-drop",
+		"/Users/ledesma/development/elm/elm-touch-drop/Examples",
+		"/Users/ledesma/development/elm/elm-touch-drop/src",
+		"/Users/ledesma/development/elm/elm-touch-drop/src/Native"
+	],
+	"file_history":
+	[
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/Elm Language Support/Syntaxes/Elm.tmLanguage",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/RegionDrawer.elm",
+		"/Users/ledesma/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/27A0ED49-1B48-454C-829A-3FE076B1AB2F/clion.vmoptions",
+		"/Applications/CLion.app/Contents/bin/clion.vmoptions",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/DocumentCorrectionView.elm",
+		"/Users/ledesma/development/elixir/user_interface/web/static/css/app.css",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/DocumentCorrectionModel.elm",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/DocumentCorrectionActions.elm",
+		"/Users/ledesma/development/elixir/user_interface/lib/recoflo/data/encoder.ex",
+		"/Users/ledesma/development/elixir/user_interface/web/static/js/app.js",
+		"/Users/ledesma/development/elixir/user_interface/web/channels/document_channel.ex",
+		"/Users/ledesma/development/elixir/user_interface/lib/recoflo/interface/orchestrator.ex",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/BatchCorrectionView.elm",
+		"/Users/ledesma/development/elixir/user_interface/priv/static/css/app.css",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/BatchCorrectionActions.elm",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/DocumentCorrection.elm",
+		"/Users/ledesma/development/elixir/user_interface/mix.exs",
+		"/Users/ledesma/development/elixir/user_interface/web/templates/reception/index.html.eex",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/BatchCorrectionModel.elm",
+		"/Users/ledesma/development/elixir/user_interface/.gitignore",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/DocumentCorrectionJson.elm",
+		"/Users/ledesma/development/elixir/user_interface/test/recoflo/data/batches_test.exs",
+		"/Users/ledesma/development/elixir/user_interface/test/support/channel_case.ex",
+		"/Users/ledesma/development/elixir/user_interface/test/recoflo/data/documents_test.exs",
+		"/Users/ledesma/development/elixir/user_interface/web/channels/reception_channel.ex",
+		"/Users/ledesma/development/elixir/user_interface/test/channels/reception_channel_test.exs",
+		"/Users/ledesma/development/elixir/user_interface/test/channels/document_channel_test.exs",
+		"/Users/ledesma/development/elixir/user_interface/test/support/conn_case.ex",
+		"/Users/ledesma/development/elixir/user_interface/mix.lock",
+		"/Users/ledesma/development/elixir/user_interface/lib/users_loader.ex",
+		"/Users/ledesma/development/elixir/user_interface/lib/recoflo/data/users.ex",
+		"/Users/ledesma/development/elixir/user_interface/test/recoflo/data/users_test.exs",
+		"/Users/ledesma/development/elixir/user_interface/web/controllers/auth_controller.ex",
+		"/Users/ledesma/development/elixir/user_interface/lib/recoflo/token.ex",
+		"/Users/ledesma/development/elixir/user_interface/lib/recoflo/data/batches.ex",
+		"/Users/ledesma/development/elixir/user_interface/test/controllers/reception_controller_test.exs",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/Auth.elm",
+		"/Users/ledesma/development/elixir/user_interface/deps/persist_aws/lib/gui/document.ex",
+		"/Users/ledesma/development/elixir/user_interface/deps/persist_aws/lib/aws/dynamo.document.ex",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/AuthModel.elm",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/AuthActions.elm",
+		"/Users/ledesma/development/elixir/user_interface/test/controllers/auth_controller_test.exs",
+		"/Users/ledesma/development/elixir/user_interface/config/config.exs",
+		"/Users/ledesma/development/elixir/user_interface/deps/phoenix/mix.exs",
+		"/Users/ledesma/development/elixir/user_interface/test/controllers/uploader_controller_test.exs",
+		"/Users/ledesma/development/elixir/user_interface/web/controllers/uploader_controller.ex",
+		"/Users/ledesma/development/elixir/user_interface/lib/plugs/redirect_to_auth.ex",
+		"/Users/ledesma/development/elixir/user_interface/web/web.ex",
+		"/Users/ledesma/development/elixir/user_interface/test/test_helper.exs",
+		"/Users/ledesma/development/elixir/user_interface/test/controllers/batch_controller_test.exs",
+		"/Users/ledesma/development/elixir/user_interface/lib/recoflo.ex",
+		"/Users/ledesma/development/elixir/user_interface/web/gettext.ex",
+		"/Users/ledesma/development/elixir/user_interface/test/support/model_case.ex",
+		"/Users/ledesma/development/elixir/user_interface/web/router.ex",
+		"/Users/ledesma/development/elixir/user_interface/config/test.exs",
+		"/Users/ledesma/development/elixir/user_interface/config/dev.exs",
+		"/Users/ledesma/development/elixir/user_interface/web/static/js/socket.js",
+		"/Users/ledesma/development/elixir/user_interface/web/controllers/reception_controller.ex",
+		"/Users/ledesma/development/elixir/user_interface/web/controllers/page_controller.ex",
+		"/Users/ledesma/development/elixir/user_interface/deps/phoenix_token_auth/lib/phoenix_token_auth/controllers/sessions_controller.ex",
+		"/Users/ledesma/development/elixir/user_interface/lib/recoflo/data/documents.ex",
+		"/Users/ledesma/development/elixir/user_interface/web/templates/layout/app.html.eex",
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/elm-stuff/packages/evancz/elm-html/4.0.2/src/Html/Events.elm",
+		"/Users/ledesma/development/elixir/user_interface/deps/persist_aws/lib/aws/dynamo.batch.ex",
+		"/Users/ledesma/development/elixir/user_interface/web/controllers/documents_api_controller.ex",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/Html/Flash.elm",
+		"/Users/ledesma/development/elixir/user_interface/web/elm/BatchCorrection.elm",
+		"/Users/ledesma/development/elixir/user_interface/deps/phoenix/priv/static/phoenix.js",
+		"/Users/ledesma/development/elixir/user_interface/web/channels/user_socket.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/DocumentCorrectionActions.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/DocumentCorrection.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/channels/document_channel.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/deps/persist_aws/lib/gui/batch.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/BatchCorrectionModel.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/mix.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/router.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/templates/documents/show.html.eex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/BatchCorrectionActions.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/DocumentCorrectionView.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/static/js/app.js",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/templates/reception/index.html.eex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/controllers/documents_api_controller.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/BatchCorrectionView.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/controllers/documents_controller.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/static/vendor/auth.js",
+		"/Users/ledesma/development/elixir/hello_phoenix/mix.lock",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/AuthActions.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/Auth.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/controllers/page_controller.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/recoflo.sublime-project",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/templates/page/index.html.eex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/controllers/batch_controller.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/.gitignore",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/views/batch_view.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/test/controllers/batch_controller_test.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/brunch-config.js",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/BatchCorrection.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/static/css/app.css",
+		"/Users/ledesma/development/elixir/hello_phoenix/test/controllers/reception_controller_test.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/controllers/reception_controller.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/DocumentCorrectionJson.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/DocumentCorrectionModel.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/CorrectionView.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/models/field.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/test/models/alternative_test.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/models/alternative.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/elm-stuff/build-artifacts/0.16.0/user/project/1.0.0/DocumentCorrectionActions.elmo",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/CorrectionModel.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/models/page.ex",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/elm-package.json",
+		"/Users/ledesma/development/elixir/hello_phoenix/test/controllers/uploader_controller_test.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/priv/repo/migrations/20160129211052_add_status_to_documents.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/priv/repo/migrations/20160206171504_add_status_to_page.exs",
+		"/Users/ledesma/development/elixir/hello_phoenix/priv/repo/migrations/20160206170554_create_alternative.exs",
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/static/css/glyphicons.css",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/Correction.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/CorrectionActions.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/Layout.elm",
+		"/Users/ledesma/Library/Application Support/Sublime Text 3/Packages/Elm Language Support/Settings/Elm Language Support.sublime-settings",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/elm-stuff/packages/ledesma/elm-touch-drop/1.0.0/src/Native/TouchDrop.js",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/elm-stuff/packages/ledesma/elm-touch-drop/1.0.0/src/TouchDrop.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/elm-stuff/packages/ledesma/elm-touch-drop/1.0.0/elm-package.json",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/elm/Html/Drag.elm",
+		"/Users/ledesma/development/elixir/hello_phoenix/web/models/document.ex"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/ledesma/development/elixir/user_interface/web",
+			"/Users/ledesma/development/elixir/user_interface",
+			"/Users/ledesma/development/elixir/user_interface/web",
+			"/Users/ledesma/development/elixir/user_interface/lib",
+			"/Users/ledesma/development/elixir/user_interface/test",
+			"/Users/ledesma/development/elixir/user_interface/deps/phoenix/lib",
+			"/Users/ledesma/development/elixir/user_interface/web",
+			"/Users/ledesma/development/elixir/user_interface/test",
+			"/Users/ledesma/development/elixir/user_interface/priv",
+			"/Users/ledesma/development/elixir/user_interface/web",
+			"/Users/ledesma/development/elixir/user_interface/test",
+			"/Users/ledesma/development/elixir/user_interface/web/elm,*.elm",
+			"/Users/ledesma/development/elixir/user_interface/web/elm",
+			"/Users/ledesma/development/elixir/user_interface/deps/phoenix",
+			"/Users/ledesma/development/elixir/user_interface/web/elm,*.elm",
+			"/Users/ledesma/development/elixir/user_interface/web/elm",
+			"/Users/ledesma/development/elixir/user_interface",
+			"/Users/ledesma/development/elixir/user_interface,*.js",
+			"/Users/ledesma/development/elixir/user_interface",
+			"/Users/ledesma/development/elixir/hello_phoenix/deps/persist_aws/lib/aws",
+			"/Users/ledesma/development/elixir/hello_phoenix/deps/persist_aws/lib",
+			"/Users/ledesma/development/elixir/hello_phoenix/web",
+			"/Users/ledesma/development/elixir/hello_phoenix/web/elm",
+			"/Users/ledesma/development/elixir/hello_phoenix",
+			"/Users/ledesma/development/elixir/hello_phoenix/web"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"json",
+			"action",
+			"Action",
+			"pageView",
+			"image",
+			"img",
+			"alter",
+			"initialMousePosition",
+			"mouseWasDown",
+			"overlayF",
+			"shift",
+			"editF",
+			"alterna",
+			"input",
+			"batch",
+			"updateDocument",
+			"extract_alternative",
+			"class",
+			"docClass",
+			"class",
+			" class",
+			"class",
+			"extrac",
+			"user.name",
+			"name",
+			"unauthorized",
+			"name",
+			"name: name",
+			"Rosy.Persist",
+			"user",
+			"Rosy.Persist.User",
+			"IO.inspect",
+			"authorized_socket",
+			"get_item",
+			"plug",
+			"IO.in",
+			"email",
+			"UpdateEmail",
+			"trimAndUpdateEmail",
+			"emailFromModel",
+			"email",
+			"exto",
+			"\n     ",
+			"ecto",
+			"test",
+			"-->",
+			"Token",
+			"set_password",
+			"updateA",
+			"drag",
+			"layers",
+			"pageView",
+			"currentPage",
+			"page",
+			"confid",
+			"super",
+			"super+",
+			"num_sele",
+			"num",
+			"tab",
+			"select",
+			"mousedown",
+			"16",
+			"GenEvent",
+			"Genserver",
+			"UpdateDocument",
+			"SaveDocument",
+			"SaveDocoment",
+			"UPdateDocoment",
+			"RequestDocumentFromBackend",
+			"RequestInitialDocumentFromBackend",
+			"image_id",
+			"id",
+			"document",
+			"hideDialogEffect",
+			"hideDialog",
+			"HideDialog",
+			"hideDialog",
+			"HideDialog",
+			"elmApp",
+			"flash_visible",
+			"model.flashType",
+			"message",
+			"broadc",
+			"npm",
+			"var socket",
+			"fuction socket",
+			"socket",
+			"project",
+			"update_page",
+			"page_id",
+			"document",
+			"id",
+			"headers_to_map",
+			"head_object",
+			"demo-company",
+			"string",
+			"toString",
+			"to_string",
+			"toString",
+			"authorizedRequest",
+			"bearer",
+			"BackendDa",
+			"AuthActions.elm",
+			"autho",
+			"auth",
+			"elm",
+			"auth",
+			"redirect",
+			"redirectMailbox",
+			"::",
+			"int",
+			"externalD",
+			" li",
+			"li ",
+			"55px",
+			"55",
+			"Correction",
+			"classlist",
+			"button",
+			"selectAlternative",
+			"false",
+			"standardIconButton",
+			"<<",
+			"UpdateDocumentFromBackend",
+			"zoomCenter",
+			"Page",
+			"thu"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"formType",
+			"docClass",
+			"\\n\\{",
+			"]\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "elm-package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 478,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/TouchDrop.elm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								857,
+								857
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_encoding": "UTF-8",
+							"syntax": "Packages/Elm Language Support/Syntaxes/Elm.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 136.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/Native/TouchDrop.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3374,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3374,
+								3374
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 987.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Examples/sort_documents.elm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3859,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								973,
+								973
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_encoding": "UTF-8",
+							"syntax": "Packages/Elm Language Support/Syntaxes/Elm.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 503.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.elm_type":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 397.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "elm-touch-drop.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"apcss",
+				"web/static/css/app.css"
+			],
+			[
+				"mixe",
+				"mix.exs"
+			],
+			[
+				"20231",
+				"Symcon/scripts/20231.ips.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/development/elixir/persist_aws/persist_aws.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 296.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
